@@ -2,6 +2,9 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
+ext {
+    nav_version = "2.6.0"
+}
 
 android {
     namespace 'com.mr_nbody16.movieapp_composelearning'
@@ -64,4 +67,10 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+
+    implementation "androidx.navigation:navigation-compose:$nav_version"
+    implementation "io.coil-kt:coil-compose:2.4.0"
+
+
 }
